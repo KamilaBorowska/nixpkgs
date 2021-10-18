@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ config, ... }:
 
 {
   imports = [ ./installation-cd-minimal.nix ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = config.boot.zfs.package.latestCompatibleLinuxPackages;
 }
