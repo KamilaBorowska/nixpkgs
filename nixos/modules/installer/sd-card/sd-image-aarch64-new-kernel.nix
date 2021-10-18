@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ config, ... }:
 
 {
   imports = [ ./sd-image-aarch64.nix ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = config.boot.zfs.package.latestCompatibleLinuxPackages;
 }
