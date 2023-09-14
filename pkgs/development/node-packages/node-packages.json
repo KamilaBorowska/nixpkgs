@@ -218,6 +218,7 @@
 , "react-tools"
 , "redoc-cli"
 , "remod-cli"
+, "renovate"
 , "reveal.js"
 , "rimraf"
 , "rollup"
